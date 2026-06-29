@@ -55,7 +55,7 @@ const Certificates = () => {
                 boxShadow: "0 20px 40px rgba(107, 186, 167, 0.1)",
                 borderColor: "rgba(107, 186, 167, 0.25)"
               }}
-              className="glass-panel-dark dark:glass-panel-dark light:glass-panel-light p-8 rounded-2xl border border-slate-800 dark:border-slate-850 light:border-slate-200 w-full max-w-md flex flex-col group transition-all duration-300 relative overflow-hidden"
+              className="glass-panel-dark dark:glass-panel-dark light:glass-panel-light p-8 rounded-2xl border border-slate-800 dark:border-slate-850 light:border-slate-200 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md flex flex-col group transition-all duration-300 relative overflow-hidden"
             >
               {/* Corner Badge */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-bl-full flex items-center justify-center text-accent/20 group-hover:bg-accent/10 group-hover:text-accent/30 transition-all duration-300">

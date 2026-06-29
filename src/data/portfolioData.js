@@ -177,22 +177,6 @@ export const portfolioData = {
       description: "Demonstrated fundamental understanding of the AWS Cloud, global infrastructure, security models, services ecosystem, and core deployment standards.",
       credentialUrl: "/aws_cloud_practitioner_essentials.pdf",
       code: "AWS Completion Certificate"
-    },
-    {
-      name: "PYTHON Foundation",
-      organization: "Infosys Springboard",
-      date: "Completed 2025",
-      description: "Foundational training in Python programming language covering syntax, collections, data handling, and algorithm structure.",
-      credentialUrl: "#",
-      code: "Infosys Springboard"
-    },
-    {
-      name: "AI Foundation Certificate",
-      organization: "Infosys Springboard",
-      date: "Completed 2025",
-      description: "Foundational training in artificial intelligence concepts, core machine learning paradigms, and public AI utilities.",
-      credentialUrl: "#",
-      code: "Infosys Springboard"
     }
   ],
   experience: [
