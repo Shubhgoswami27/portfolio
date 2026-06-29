@@ -24,11 +24,11 @@ const About = () => {
   return (
     <section 
       id="about" 
-      className="py-24 relative overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-50 light:text-slate-900 transition-colors duration-500"
+      className="py-24 relative overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
       {/* Background blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="blob bg-purple-600/10 dark:bg-purple-600/15 light:bg-purple-300/10 w-96 h-96 top-1/3 left-[-100px] blur-[120px]" />
+        <div className="blob bg-[#6C648B]/5 dark:bg-[#6C648B]/8 light:bg-[#6C648B]/5 w-96 h-96 top-1/3 left-[-100px] blur-[120px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

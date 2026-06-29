@@ -48,19 +48,23 @@ const Hero = () => {
 
   const handleDownloadResume = (e) => {
     e.preventDefault();
-    window.print(); // Fallback print action (premium PDF styling on print available)
+    if (resumeUrl && resumeUrl !== '#' && resumeUrl !== '') {
+      window.open(resumeUrl, '_blank');
+    } else {
+      window.print(); // Fallback print action
+    }
   };
 
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-50 light:text-slate-900 transition-colors duration-500"
+      className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
-      {/* Background Animated Blobs */}
+      {/* Background Animated Blobs - Aqua + Lavender */}
       <div className="absolute inset-0 z-0">
-        <div className="blob bg-purple-600/30 dark:bg-purple-600/35 light:bg-purple-300/30 w-72 h-72 top-10 left-10 animate-float" />
-        <div className="blob bg-blue-600/25 dark:bg-blue-600/30 light:bg-blue-300/25 w-96 h-96 bottom-10 right-10 animate-float-delayed" />
-        <div className="blob bg-pink-500/20 dark:bg-pink-500/25 light:bg-pink-300/20 w-80 h-80 top-1/2 left-2/3 animate-pulse-glow" />
+        <div className="blob bg-[#6BBAA7]/10 w-72 h-72 top-10 left-10 animate-float" />
+        <div className="blob bg-[#6C648B]/12 w-96 h-96 bottom-10 right-10 animate-float-delayed" />
+        <div className="blob bg-[#B6A19E]/8 w-80 h-80 top-1/2 left-2/3 animate-pulse-glow" />
       </div>
 
       {/* Floating 3D SVGs in background */}
@@ -71,7 +75,7 @@ const Hero = () => {
           className="absolute top-1/4 left-1/12 opacity-20 dark:opacity-30 light:opacity-10"
         >
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-            <rect x="5" y="5" width="30" height="30" rx="6" stroke="#A78BFA" strokeWidth="2" />
+            <rect x="5" y="5" width="30" height="30" rx="6" stroke="#6BBAA7" strokeWidth="1.5" />
           </svg>
         </motion.div>
         <motion.div 
@@ -80,7 +84,7 @@ const Hero = () => {
           className="absolute bottom-1/4 right-1/12 opacity-20 dark:opacity-30 light:opacity-10"
         >
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <circle cx="25" cy="25" r="20" stroke="#EC4899" strokeWidth="2" strokeDasharray="6 6" />
+            <circle cx="25" cy="25" r="20" stroke="#6C648B" strokeWidth="1.5" strokeDasharray="4 4" />
           </svg>
         </motion.div>
         <motion.div 
@@ -116,7 +120,7 @@ const Hero = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-none"
           >
             Hello, I'm <br />
-            <span className="bg-gradient-to-r from-accent via-fuchsia-400 to-blue-400 bg-clip-text text-transparent drop-shadow-sm">
+            <span className="bg-gradient-to-r from-[#6BBAA7] via-slate-100 to-[#6C648B] bg-clip-text text-transparent drop-shadow-sm">
               {name}
             </span>
           </motion.h1>
@@ -152,7 +156,7 @@ const Hero = () => {
             <a
               href="#contact"
               onClick={handleContactClick}
-              className="px-8 py-3.5 rounded-xl font-medium tracking-wide flex items-center justify-center space-x-2 text-white bg-accent hover:bg-accent-hover transition-all duration-300 cursor-pointer shadow-[0_4px_20px_rgba(167,139,250,0.35)] hover:shadow-[0_4px_25px_rgba(167,139,250,0.5)] hover:-translate-y-0.5 active:translate-y-0"
+              className="px-8 py-3.5 rounded-xl font-bold tracking-wide flex items-center justify-center space-x-2 text-slate-950 bg-sunshine hover:bg-sunshine-hover transition-all duration-300 cursor-pointer shadow-[0_4px_15px_rgba(251,161,0,0.3)] hover:shadow-[0_4px_25px_rgba(251,161,0,0.45)] hover:-translate-y-0.5 active:translate-y-0"
             >
               <span>Get In Touch</span>
               <FaArrowRight className="w-4 h-4" />
@@ -161,7 +165,7 @@ const Hero = () => {
             <a
               href={resumeUrl}
               onClick={handleDownloadResume}
-              className="px-8 py-3.5 rounded-xl font-medium tracking-wide flex items-center justify-center space-x-2 transition-all duration-300 cursor-pointer border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-100 hover:border-slate-500 hover:-translate-y-0.5 active:translate-y-0 light:bg-white/80 light:border-slate-300 light:hover:bg-slate-100 light:text-slate-900"
+              className="px-8 py-3.5 rounded-xl font-medium tracking-wide flex items-center justify-center space-x-2 transition-all duration-300 cursor-pointer border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-100 hover:border-sunshine hover:text-sunshine hover:-translate-y-0.5 active:translate-y-0 light:bg-white/80 light:border-slate-300 light:hover:bg-slate-100 light:text-slate-900"
             >
               <FaDownload className="w-4 h-4" />
               <span>Download Resume</span>
@@ -178,11 +182,11 @@ const Hero = () => {
             className="relative"
           >
             {/* Background glowing circle */}
-            <div className="absolute inset-0 bg-accent/20 dark:bg-accent/25 light:bg-accent/15 rounded-full filter blur-xl animate-pulse-glow" />
+            <div className="absolute inset-0 bg-[#6BBAA7]/10 dark:bg-[#6BBAA7]/15 light:bg-[#6BBAA7]/5 rounded-full filter blur-xl animate-pulse-glow" />
 
             {/* Profile Frame with glowing border */}
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2.5 bg-gradient-to-tr from-accent via-fuchsia-500 to-blue-500 shadow-[0_0_40px_rgba(167,139,250,0.4)] animate-float">
-              <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-900 dark:border-slate-950 light:border-slate-50 bg-slate-800">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-[#6BBAA7] via-[#B6A19E] to-[#6C648B] shadow-[0_0_35px_rgba(107,186,167,0.25)] animate-float">
+              <div className="w-full h-full rounded-full overflow-hidden border-2 border-slate-900 dark:border-slate-950 light:border-slate-50 bg-slate-800">
                 <img 
                   src={profileAvatar} 
                   alt={name} 
@@ -196,7 +200,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 px-4 py-2 rounded-xl text-xs font-semibold glass-panel-dark dark:border-accent/40 light:glass-panel-light light:border-slate-300 border shadow-lg text-accent"
+              className="absolute -top-4 -right-4 px-4 py-2 rounded-xl text-xs font-semibold glass-panel-dark dark:border-[#6BBAA7]/40 light:glass-panel-light light:border-slate-300 border shadow-lg text-[#6BBAA7]"
             >
               🧠 AI & ML
             </motion.div>
@@ -205,7 +209,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute -bottom-2 -left-4 px-4 py-2 rounded-xl text-xs font-semibold glass-panel-dark dark:border-accent/40 light:glass-panel-light light:border-slate-300 border shadow-lg text-accent"
+              className="absolute -bottom-2 -left-4 px-4 py-2 rounded-xl text-xs font-semibold glass-panel-dark dark:border-[#6BBAA7]/40 light:glass-panel-light light:border-slate-300 border shadow-lg text-[#6BBAA7]"
             >
               ☕ Java Developer
             </motion.div>

@@ -1,20 +1,19 @@
 export const portfolioData = {
   profile: {
-    name: "Shubh Giri Goswami",
+    name: "SHUBH GIRI GOSWAMI",
     titles: [
-      "Software Engineer",
-      "Java Developer",
-      "Machine Learning Enthusiast",
-      "AI Developer"
+      "Computer Science Student",
+      "AI & Machine Learning Enthusiast",
+      "Software Developer"
     ],
-    tagline: "Transforming Ideas into Intelligent Software Solutions.",
-    bio: "I am a B.Tech student in Artificial Intelligence and Machine Learning with a passion for software development and machine learning. I enjoy building real-world projects using Java, Machine Learning, and Python. My goal is to become a skilled Software Engineer and contribute to innovative technology solutions.",
-    email: "shubhgirigoswami@gmail.com",
-    phone: "+91 98765 43210", // Placeholder
-    location: "Indore, Madhya Pradesh, India",
-    github: "https://github.com/shubhgirigoswami",
-    linkedin: "https://linkedin.com/in/shubh-giri-goswami",
-    resumeUrl: "#", // Can trigger page print or mock download
+    tagline: "Aspiring Computer Science & AIML Student",
+    bio: "Aspiring Computer Science student with a strong foundation in programming and data structures, seeking an opportunity to apply my technical skills. Eager to learn new technologies, gain practical industry experience, and contribute effectively to team success.",
+    email: "shubhgiswami1411@gmail.com",
+    phone: "+91 96912 23092",
+    location: "Indore, India",
+    github: "https://github.com/shubhgoswami27",
+    linkedin: "https://linkedin.com/in/shubh-giri-giswami",
+    resumeUrl: "/shubh_giri_goswami_resume.jpg",
   },
   about: {
     introduction: "I am an Artificial Intelligence & Machine Learning student passionate about software engineering, intelligent systems, and building solutions that bridge the gap between complex algorithms and practical utility.",
@@ -36,28 +35,28 @@ export const portfolioData = {
   },
   skills: [
     {
-      category: "Programming Languages",
+      category: "Currently Learning",
       items: [
-        { name: "Java", level: 85, icon: "SiJava" },
-        { name: "Python", level: 80, icon: "SiPython" },
-        { name: "C++", level: 70, icon: "SiCplusplus" }
+        { name: "Java", icon: "SiJava" },
+        { name: "Machine Learning", icon: "GiBrain" },
+        { name: "Scikit-Learn", icon: "SiScikitlearn" }
       ]
     },
     {
-      category: "Machine Learning & Data Science",
+      category: "Experienced With",
       items: [
-        { name: "Machine Learning", level: 78, icon: "GiBrain" },
-        { name: "NumPy", level: 85, icon: "SiNumpy" },
-        { name: "Pandas", level: 82, icon: "SiPandas" },
-        { name: "Matplotlib", level: 80, icon: "SiMatplotlib" },
-        { name: "Scikit-Learn", level: 75, icon: "SiScikitlearn" }
+        { name: "Python", icon: "SiPython" },
+        { name: "C++", icon: "SiCplusplus" },
+        { name: "NumPy", icon: "SiNumpy" },
+        { name: "Pandas", icon: "SiPandas" },
+        { name: "Matplotlib", icon: "SiMatplotlib" }
       ]
     },
     {
-      category: "Tools & Collaboration",
+      category: "Tools",
       items: [
-        { name: "Git", level: 85, icon: "SiGit" },
-        { name: "GitHub", level: 88, icon: "SiGithub" }
+        { name: "Git", icon: "SiGit" },
+        { name: "GitHub", icon: "SiGithub" }
       ]
     }
   ],
@@ -127,40 +126,73 @@ export const portfolioData = {
   ],
   education: [
     {
-      grade: "Graduation (B.Tech)",
-      specialization: "B.Tech in Artificial Intelligence & Machine Learning",
+      grade: "BTech Computer Science",
+      specialization: "CSE - Artificial Intelligence and machine learning",
       institution: "Acropolis Institute of Technology and Research, Indore",
-      duration: "2024 – 2028",
-      scoreType: "CGPA",
-      score: "7.4",
-      description: "Acquiring in-depth training in programming paradigms, data structures, algorithms, probability & statistics, and specialized courses in artificial intelligence, neural networks, and model architectures."
+      duration: "09/2024 – Present",
+      scoreType: "CGPA Till 1st year",
+      score: "6.80",
+      description: "Focusing on Artificial Intelligence and Machine Learning core subjects, data structures, algorithm design, and software engineering. Currently in 2nd year."
     },
     {
-      grade: "Class 12 (Senior Secondary)",
-      specialization: "Science (PCM)",
-      institution: "St. Joseph Senior Secondary School, Narsinghgarh",
-      duration: "Completed 2024",
+      grade: "12th Board",
+      specialization: "PCM (Physics, Chemistry, Mathematics)",
+      institution: "St. Joseph Senior Sec School, Indore",
+      duration: "04/2023 – 03/2024",
       scoreType: "Percentage",
-      score: "70%",
-      description: "Focused on core sciences (Physics, Chemistry, Mathematics) and computer science basics."
+      score: "85%",
+      description: "Completed senior secondary school with a focus on Physics, Chemistry, and Mathematics."
     },
     {
-      grade: "Class 10 (Secondary School)",
+      grade: "10th Board",
       specialization: "General CBSE Curriculum",
-      institution: "St. Joseph Senior Secondary School, Narsinghgarh",
-      duration: "Completed 2022",
+      institution: "St. Joseph Senior Sec School, Indore",
+      duration: "04/2021 – 03/2022",
       scoreType: "Percentage",
-      score: "73%",
-      description: "Developed strong foundational skills in mathematics, sciences, social studies, and languages."
+      score: "93%",
+      description: "Completed secondary education with high distinction."
     }
   ],
   certificates: [
     {
-      name: "Machine Learning Bootcamp",
-      organization: "Acropolis Institute of Technology and Research",
-      date: "2025",
-      description: "Completed hands-on intensive training covering supervised learning, dataset preprocessing, model evaluation, and Scikit-learn implementations.",
-      credentialUrl: "#"
+      name: "Introduction to Generative AI Studio",
+      organization: "Google Cloud",
+      date: "November 11, 2025",
+      description: "Demonstrated dedication and skill development in artificial intelligence by successfully completing training for Google Cloud Generative AI Studio.",
+      credentialUrl: "/google_cloud_generative_ai_studio.pdf",
+      code: "9377476"
+    },
+    {
+      name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+      organization: "Oracle University",
+      date: "October 30, 2025",
+      description: "Official certification recognizing foundational proficiency in AI and Machine Learning technologies under Oracle Cloud Infrastructure. Valid until October 30, 2027.",
+      credentialUrl: "/oracle_cloud_infrastructure_ai_foundations.pdf",
+      code: "103022302OCI25AICFA"
+    },
+    {
+      name: "AWS Cloud Practitioner Essentials",
+      organization: "Amazon Web Services (AWS)",
+      date: "November 11, 2025",
+      description: "Demonstrated fundamental understanding of the AWS Cloud, global infrastructure, security models, services ecosystem, and core deployment standards.",
+      credentialUrl: "/aws_cloud_practitioner_essentials.pdf",
+      code: "AWS Completion Certificate"
+    },
+    {
+      name: "PYTHON Foundation",
+      organization: "Infosys Springboard",
+      date: "Completed 2025",
+      description: "Foundational training in Python programming language covering syntax, collections, data handling, and algorithm structure.",
+      credentialUrl: "#",
+      code: "Infosys Springboard"
+    },
+    {
+      name: "AI Foundation Certificate",
+      organization: "Infosys Springboard",
+      date: "Completed 2025",
+      description: "Foundational training in artificial intelligence concepts, core machine learning paradigms, and public AI utilities.",
+      credentialUrl: "#",
+      code: "Infosys Springboard"
     }
   ],
   experience: [

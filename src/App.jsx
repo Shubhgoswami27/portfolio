@@ -43,7 +43,7 @@ function App() {
     <>
       {/* Scroll Progress Indicator */}
       <div 
-        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-accent via-fuchsia-400 to-blue-400 z-50 transition-all duration-100"
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#6BBAA7] to-[#6C648B] z-50 transition-all duration-100"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -55,17 +55,17 @@ function App() {
             exit={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
             className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950 text-slate-100"
           >
-            {/* Glowing Logo */}
+            {/* Glowing Logo / Full Name */}
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: [0.8, 1.1, 1], opacity: 1 }}
-              transition={{ duration: 1, ease: 'easeOut' }}
-              className="relative mb-6"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1.2, ease: 'easeOut' }}
+              className="relative mb-8 text-center"
             >
-              <div className="absolute inset-0 bg-accent/20 rounded-full filter blur-xl animate-pulse-glow" />
-              <div className="relative w-24 h-24 rounded-full border-2 border-accent/30 flex items-center justify-center text-3xl font-display font-extrabold bg-slate-900/60 shadow-[0_0_20px_rgba(167,139,250,0.3)]">
-                <span className="bg-gradient-to-r from-accent to-fuchsia-400 bg-clip-text text-transparent">SG</span>
-              </div>
+              <div className="absolute inset-0 bg-accent/5 filter blur-xl animate-pulse-glow" />
+              <h1 className="relative text-2xl md:text-3xl font-display font-extrabold tracking-widest bg-gradient-to-r from-[#6BBAA7] via-slate-100 to-[#6C648B] bg-clip-text text-transparent drop-shadow-sm">
+                SHUBH GIRI GOSWAMI
+              </h1>
             </motion.div>
 
             {/* Spinner */}
@@ -74,7 +74,7 @@ function App() {
                 initial={{ left: '-100%' }}
                 animate={{ left: '100%' }}
                 transition={{ repeat: Infinity, duration: 1.2, ease: 'easeInOut' }}
-                className="absolute top-0 bottom-0 w-1/2 bg-gradient-to-r from-accent to-fuchsia-400 rounded-full"
+                className="absolute top-0 bottom-0 w-1/2 bg-gradient-to-r from-[#6BBAA7] to-[#6C648B] rounded-full"
               />
             </div>
             

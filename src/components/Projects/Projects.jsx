@@ -26,11 +26,11 @@ const Projects = () => {
   return (
     <section 
       id="projects" 
-      className="py-24 relative overflow-hidden bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-100 light:text-slate-900 transition-colors duration-500"
+      className="py-24 relative overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
       {/* Background blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="blob bg-purple-600/5 dark:bg-purple-600/10 light:bg-purple-300/5 w-80 h-80 bottom-1/4 left-10 blur-[100px]" />
+        <div className="blob bg-[#6C648B]/5 dark:bg-[#6C648B]/8 light:bg-[#6C648B]/5 w-80 h-80 bottom-1/4 left-10 blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

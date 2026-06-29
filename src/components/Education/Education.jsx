@@ -8,11 +8,11 @@ const Education = () => {
   return (
     <section 
       id="education" 
-      className="py-24 relative overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-50 light:text-slate-900 transition-colors duration-500"
+      className="py-24 relative overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
       {/* Background blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="blob bg-blue-600/5 dark:bg-blue-600/10 light:bg-blue-300/5 w-90 h-90 top-10 right-10 blur-[100px]" />
+        <div className="blob bg-[#6BBAA7]/5 dark:bg-[#6BBAA7]/8 light:bg-[#6BBAA7]/5 w-90 h-90 top-10 right-10 blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -43,7 +43,7 @@ const Education = () => {
         {/* Timeline Container */}
         <div className="relative max-w-4xl mx-auto">
           {/* Vertical Center Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent/80 via-purple-500/50 to-blue-500/20 transform -translate-x-1/2" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#6BBAA7]/60 via-[#6C648B]/40 to-[#B6A19E]/10 transform -translate-x-1/2" />
 
           {/* Timeline Items */}
           <div className="space-y-12">
@@ -97,7 +97,7 @@ const Education = () => {
                   <div className="absolute left-4 md:left-1/2 top-6 transform -translate-x-1/2 flex items-center justify-center z-10">
                     <motion.div
                       whileHover={{ scale: 1.3 }}
-                      className="w-5 h-5 rounded-full border-4 border-slate-950 dark:border-slate-950 light:border-slate-50 bg-accent shadow-[0_0_12px_#a78bfa] cursor-pointer"
+                      className="w-5 h-5 rounded-full border-4 border-slate-950 dark:border-slate-950 light:border-slate-50 bg-[#B6A19E] shadow-[0_0_10px_rgba(182,161,158,0.5)] cursor-pointer"
                     />
                   </div>
 

@@ -50,7 +50,7 @@ const Contact = () => {
           particleCount: 150,
           spread: 80,
           origin: { y: 0.6 },
-          colors: ['#A78BFA', '#C084FC', '#818CF8', '#38BDF8']
+          colors: ['#6BBAA7', '#FBA100', '#6C648B', '#B6A19E']
         });
       }, 1500);
     } else {
@@ -64,7 +64,7 @@ const Contact = () => {
             particleCount: 150,
             spread: 80,
             origin: { y: 0.6 },
-            colors: ['#A78BFA', '#C084FC', '#818CF8', '#38BDF8']
+            colors: ['#6BBAA7', '#FBA100', '#6C648B', '#B6A19E']
           });
         })
         .catch((error) => {
@@ -77,12 +77,12 @@ const Contact = () => {
   return (
     <section 
       id="contact" 
-      className="py-24 relative overflow-hidden bg-slate-950 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-100 light:text-slate-900 transition-colors duration-500"
+      className="py-24 relative overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
-      {/* Background blobs */}
+      {/* Background blobs - Aqua + Lavender */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="blob bg-purple-600/5 dark:bg-purple-600/10 light:bg-purple-300/5 w-96 h-96 top-1/2 left-[-100px] blur-[120px]" />
-        <div className="blob bg-blue-500/5 dark:bg-blue-500/10 light:bg-blue-300/5 w-80 h-80 bottom-10 right-10 blur-[100px]" />
+        <div className="blob bg-[#6C648B]/5 dark:bg-[#6C648B]/8 light:bg-[#6C648B]/5 w-96 h-96 top-1/2 left-[-100px] blur-[120px]" />
+        <div className="blob bg-[#6BBAA7]/5 dark:bg-[#6BBAA7]/8 light:bg-[#6BBAA7]/5 w-80 h-80 bottom-10 right-10 blur-[100px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -188,7 +188,7 @@ const Contact = () => {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-accent hover:text-accent hover:shadow-[0_0_15px_rgba(167,139,250,0.4)] transition-all duration-300 text-slate-300 cursor-pointer dark:bg-slate-900 light:bg-white light:border-slate-200 light:text-slate-650"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-accent hover:text-accent hover:shadow-[0_0_15px_rgba(107,186,167,0.25)] transition-all duration-300 text-slate-300 cursor-pointer dark:bg-slate-900 light:bg-white light:border-slate-200 light:text-slate-650"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-6 h-6" />
@@ -197,7 +197,7 @@ const Contact = () => {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-accent hover:text-accent hover:shadow-[0_0_15px_rgba(167,139,250,0.4)] transition-all duration-300 text-slate-300 cursor-pointer dark:bg-slate-900 light:bg-white light:border-slate-200 light:text-slate-650"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-accent hover:text-accent hover:shadow-[0_0_15px_rgba(107,186,167,0.25)] transition-all duration-300 text-slate-300 cursor-pointer dark:bg-slate-900 light:bg-white light:border-slate-200 light:text-slate-650"
                 aria-label="GitHub"
               >
                 <FaGithub className="w-6 h-6" />
@@ -291,7 +291,7 @@ const Contact = () => {
                   <button
                     disabled={status === 'loading' || status === 'success'}
                     type="submit"
-                    className="w-full py-4 rounded-xl font-medium tracking-wide flex items-center justify-center space-x-2 bg-accent hover:bg-accent-hover text-white transition-all duration-300 shadow-[0_4px_15px_rgba(167,139,250,0.3)] disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    className="w-full py-4 rounded-xl font-bold tracking-wide flex items-center justify-center space-x-2 bg-sunshine hover:bg-sunshine-hover text-slate-950 transition-all duration-300 shadow-[0_4px_15px_rgba(251,161,0,0.3)] hover:shadow-[0_4px_20px_rgba(251,161,0,0.45)] disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
                     {status === 'loading' ? (
                       <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />

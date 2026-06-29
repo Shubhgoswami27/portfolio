@@ -42,9 +42,9 @@ const Footer = () => {
         <a 
           href="#home" 
           onClick={(e) => handleLinkClick(e, 'home')}
-          className="text-xl font-display font-extrabold tracking-wider bg-gradient-to-r from-accent to-purple-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+          className="text-xl font-display font-extrabold tracking-wider bg-gradient-to-r from-[#6BBAA7] to-[#6C648B] bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
         >
-          {name.toUpperCase()}
+          {name}
         </a>
 
         {/* Quick Links Grid */}

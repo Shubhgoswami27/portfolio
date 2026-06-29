@@ -36,11 +36,11 @@ const Services = () => {
   return (
     <section 
       id="services" 
-      className="py-24 relative overflow-hidden bg-slate-900 text-slate-100 dark:bg-slate-950 dark:text-slate-100 light:bg-slate-50 light:text-slate-900 transition-colors duration-500"
+      className="py-24 relative overflow-hidden bg-transparent text-slate-100 transition-colors duration-500"
     >
       {/* Background blobs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="blob bg-blue-600/10 dark:bg-blue-600/15 light:bg-blue-300/10 w-96 h-96 top-1/4 right-[-100px] blur-[120px]" />
+        <div className="blob bg-[#6BBAA7]/5 dark:bg-[#6BBAA7]/8 light:bg-[#6BBAA7]/5 w-96 h-96 top-1/4 right-[-100px] blur-[120px]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">

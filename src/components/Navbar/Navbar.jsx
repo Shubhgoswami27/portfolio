@@ -93,9 +93,9 @@ const Navbar = () => {
         <a 
           href="#home" 
           onClick={(e) => handleNavClick(e, 'home')}
-          className="text-2xl font-display font-extrabold tracking-wider bg-gradient-to-r from-accent to-purple-400 bg-clip-text text-transparent cursor-pointer"
+          className="text-base md:text-xl lg:text-2xl font-display font-extrabold tracking-wider bg-gradient-to-r from-[#6BBAA7] to-[#6C648B] bg-clip-text text-transparent cursor-pointer"
         >
-          SG<span className="text-white dark:text-white light:text-slate-900">.GOSWAMI</span>
+          SHUBH GIRI GOSWAMI
         </a>
 
         {/* Desktop Navigation */}
